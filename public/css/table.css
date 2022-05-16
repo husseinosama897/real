@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+    table thead {
+        display: none;
+    }
+    table tbody,
+    table tr,
+    table td {
+        display: block;
+        width: 100%;
+color:black;
+    }
+    table tbody tr {
+        border-top: 1px solid;
+        margin-top: 30px;
+color:black;
+    }
+    table td {
+        padding-left: 20px;
+        position: relative;
+        text-align: left;
+color:black;
+    }
+
+    table td::before {
+        content: ":";
+        position: absolute;
+        display: inline-block;
+color:black;
+        right: 100px;
+        width: fit-content;
+    }
+    table td::after {
+        content: attr(data-table);
+        position: absolute;
+        right: 0;
+color:black;
+        padding-right: 10px;
+        font-weight: 600;
+    }
+}
